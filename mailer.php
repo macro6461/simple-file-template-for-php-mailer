@@ -52,7 +52,7 @@ STARTEMAIL;
 
           //Success
 
-          header("Location: http://localhost/php-mc-media-root/php-mc-media/?view=thank-you/");//echo "Message Sent!";
+          header("Location: $WHATEVER_PAGE_YOU_WANT_TO_REDIRECT_TO_UPON_SUCCESS");//echo "Message Sent!";
           echo "Message Sent!";
 
 //Error
