@@ -12,9 +12,9 @@ $msg = $_REQUEST['message'];
 
   $mail->IsSMTP(); // telling the class to use SMTP
   $mail->Host = "smtp.gmail.com"; // SMTP server
-  $mail->SMTPDebug = 4; // enables SMTP debug information (for testing) // 1 = errors and messages // 2 = messages only
-  $mail->SMTPAuth = true; 
-  $mail->SMTPSecure = 'tls';                 // enable SMTP authentication
+  $mail->SMTPDebug = 4;                     // enables SMTP debug information (for testing) // 1 = errors and messages // 2 = messages only
+  $mail->SMTPSecure = 'ssl';
+  $mail->SMTPAuth = true;                  // enable SMTP authentication
   $mail->Port = 587; // set the SMTP port for the GMAIL server
   $mail->SMTPAuth = true;
   $mail->Username = GMAIL_USERNAME;  // SMTP account username
